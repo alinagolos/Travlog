@@ -300,6 +300,9 @@ body {
   align-items: center;
 }
 
+.services__title {
+  width: 444px;
+}
 .services__title h4 {
   width: 490px;
 }
@@ -315,14 +318,15 @@ h4 {
   font-size: 44px;
   font-weight: 700;
 }
-
+.services__swiper {
+  width: 120%;
+  overflow: hidden;
+}
 .services__swiper-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 21px;
-
-  min-width: 0;
 }
 .services__swiper-slide {
   max-width: 350px;
@@ -380,23 +384,22 @@ h4 {
   align-items: start;
 }
 
-.destination__button-prev {
+.destination__button-prev,
+.destination__button-next {
   border-radius: 100px;
   border: 1px solid rgba(25, 24, 37, 0.1);
   padding: 28px;
   margin-right: 32px;
 }
 
-.destination__button-next {
-  border-radius: 100px;
+.destination__button-next:hover,
+.destination__button-prev:hover {
   background: #5d50c6;
-  padding: 28px;
 }
 
 .destination__swiper {
   padding-bottom: 125px;
   width: 100%;
-
   overflow: hidden;
 }
 

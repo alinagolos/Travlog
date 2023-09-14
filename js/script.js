@@ -1,6 +1,12 @@
-var swiper = new Swiper('.services__swiper', {});
+var swiper = new Swiper('.services__swiper', {
+  loop: true,
+  mousewheel: true,
+  keyboard: true,
+  allowSlideNext: false,
+});
 
 var swiper = new Swiper('.destination__swiper', {
+  loop: true,
   slidesPerView: 3,
   spaceBetween: 40,
   navigation: {
@@ -11,6 +17,7 @@ var swiper = new Swiper('.destination__swiper', {
 
 var swiper = new Swiper('.reviews__swiper', {
   cssMode: true,
+  loop: true,
   navigation: {
     prevEl: '.reviews__button-prev',
     nextEl: '.reviews__button-next',
