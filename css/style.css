@@ -134,7 +134,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 71px;
+  gap: 50px;
   padding-top: 74px;
 }
 
@@ -213,7 +213,7 @@ body {
   top: 10px;
 }
 .promo__button a:last-child:hover {
-  font-size: 1em;
+  font-size: 0.9em;
   transition: 0.1s ease-out;
 }
 .promo__button a:first-child:hover {
@@ -233,41 +233,6 @@ body {
 
 .promo__content-rigth-img {
   position: relative;
-}
-
-.promo__content-rigth-img::before {
-  content: url(../image/send.svg);
-  padding: 16px 16px 12px 16px;
-  border-radius: 50%;
-  background-color: #f85e9f;
-  box-shadow: 0px 19px 19px 0px rgba(0, 0, 0, 0.09),
-    0px 43px 26px 0px rgba(0, 0, 0, 0.05), 0px 77px 31px 0px rgba(0, 0, 0, 0.01),
-    0px 120px 34px 0px rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 270px;
-  left: -30px;
-}
-.promo__content-left-img {
-  position: relative;
-}
-.promo__content-left-img::after {
-  content: url(../image/place.svg);
-  position: absolute;
-  left: 60%;
-  top: 75%;
-}
-
-.promo__content-rigth-img::after {
-  content: url(../image/add-user.svg);
-  padding: 16px 16px 12px 16px;
-  border-radius: 50%;
-  background: #ff5722;
-  box-shadow: 0px 19px 19px 0px rgba(0, 0, 0, 0.09),
-    0px 43px 26px 0px rgba(0, 0, 0, 0.05), 0px 77px 31px 0px rgba(0, 0, 0, 0.01),
-    0px 120px 34px 0px rgba(0, 0, 0, 0);
-  position: absolute;
-  top: 570px;
-  left: 400px;
 }
 
 /*promo end*/
@@ -335,9 +300,8 @@ h4 {
   background: #fff;
 }
 
-.services__swiper-slide:active {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
-    0px 41px 89px 0px rgba(0, 0, 0, 0.1);
+.services__swiper-slide:hover {
+  box-shadow: 13px -11px 63px 21px rgba(171, 175, 178, 0.1) inset;
 }
 
 .services__swiper-content {
@@ -445,12 +409,7 @@ h4 {
 
 .destination__swiper-slide-wrapper:hover {
   border-radius: 32px;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05),
-    0px 32px 71px 0px rgba(0, 0, 0, 0.05),
-    0px 128px 128px 0px rgba(0, 0, 0, 0.04),
-    0px 288px 173px 0px rgba(0, 0, 0, 0.03),
-    0px 513px 205px 0px rgba(0, 0, 0, 0.01),
-    0px 801px 224px 0px rgba(0, 0, 0, 0);
+  box-shadow: 1px 11px 9px 0px rgba(171, 175, 178, 0.12);
 }
 .destination__swiper-slide {
   border-radius: 32px;
@@ -481,20 +440,7 @@ h4 {
 .location__content-left {
   position: relative;
 }
-.location__content-left::after {
-  content: url(../image/womansale.svg);
-  position: absolute;
-  left: 42%;
-  top: 15%;
-  z-index: 1;
-}
 
-.location__content-left::before {
-  content: url(../image/Ellipse3.svg);
-  position: absolute;
-  left: 10%;
-  top: 14%;
-}
 .location__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -510,12 +456,7 @@ h4 {
   top: 40%;
   left: 70%;
 }
-.location__content-right::before {
-  content: url(../image/Ellipse1.svg);
-  position: absolute;
-  top: -5%;
-  left: -50%;
-}
+
 .location__content-right h4 {
   margin-bottom: 32px;
 }
@@ -527,12 +468,7 @@ h4 {
   margin-bottom: 64px;
   position: relative;
 }
-.location__content-right > p::before {
-  position: absolute;
-  content: url(../image/Ellipse2.svg);
-  top: -7%;
-  left: -25%;
-}
+
 .location__list li {
   padding: 28px;
   text-align: center;
@@ -543,19 +479,6 @@ h4 {
   position: relative;
 }
 
-.location__list::after {
-  content: url(../image/Ellipse4.svg);
-  position: absolute;
-  top: 45%;
-  left: -35%;
-}
-
-.location__list::before {
-  content: url(../image/Ellipse5.svg);
-  position: absolute;
-  top: -10%;
-  left: -50%;
-}
 .location__list p {
   color: #191825;
   font-family: Inter;
@@ -575,22 +498,10 @@ h4 {
 .features__wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 42px;
 }
-.features__content-rigth {
-  position: relative;
-}
-.features__content-rigth img:last-child {
-  position: absolute;
-  left: 35%;
-  top: 38%;
-}
-.features__content-rigth::after {
-  content: url(../image/paradise.svg);
-  position: absolute;
-  left: 30%;
-  top: 10%;
-}
+
 .features__item {
   padding: 42px 42px 42px 132px;
 }
@@ -690,6 +601,7 @@ h4 {
   position: absolute;
   background-image: url(../image/bgrevius.svg);
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: 2;
   opacity: 0.1;
   top: -80px;
@@ -778,15 +690,6 @@ h4 {
 }
 /*reviews end*/
 
-.subscribe {
-  position: relative;
-}
-.subscribe::after {
-  content: url(../image/OBJECTs1.svg);
-  position: absolute;
-  left: 90%;
-  top: 70%;
-}
 .subscribe h3 {
   text-align: center;
   margin-bottom: 32px;
